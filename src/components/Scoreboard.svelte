@@ -58,11 +58,11 @@
 
   function getMedal(user: any) {
     let rank = getRank(user, "total");
-    if (rank <= Math.ceil(allUsersSize / 12)) {
+    if (rank <= Math.round(allUsersSize / 12)) {
       return "🥇 ";
-    } else if (rank <= Math.ceil(allUsersSize / 4)) {
+    } else if (rank <= Math.round(allUsersSize / 4)) {
       return "🥈 ";
-    } else if (rank <= Math.ceil(allUsersSize / 2)) {
+    } else if (rank <= Math.round(allUsersSize / 2)) {
       return "🥉 ";
     } else {
       return "🎖️ ";
@@ -141,7 +141,7 @@
               (sortKey = "Day 1")
             )}
           >
-            <div class="flex flex-row">
+            <div class="whitespace-nowrap flex flex-row">
               Day 1
               {#if sortKey === "Day 1"}
                 <div class="my-auto mx-1">
@@ -213,7 +213,7 @@
               (sortKey = "Day 2")
             )}
           >
-            <div class="flex flex-row">
+            <div class="whitespace-nowrap flex flex-row">
               Day 2
               {#if sortKey === "Day 2"}
                 <div class="my-auto mx-1">
@@ -253,8 +253,7 @@
             class="whitespace-nowrap border-collapse border px-8 py-3 border-gray-500 text-left"
             >{getMedal(user) + " " + user.name}</td
           >
-          <td
-            class="whitespace-nowrap border-collapse border px-8 py-3 border-gray-500 text-left"
+          <td class="border-collapse border px-8 py-3 border-gray-500 text-left"
             >{user.center}</td
           >
           <td
