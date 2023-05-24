@@ -7,16 +7,19 @@ import Scoreboard from "../components/Scoreboard.svelte";
   <main class="w-full text-white">
     <div class="min-h-screen flex flex-col text-center" id="greet">
       <div class="mx-auto w-full flex-1 px-4">
-        <div class="flex justify-center items-center flex-col text-center pt-20 text-6xl font-thin">
-          <span>IPST-2.2<span class="text-orange-500"> Ranking</span></span>
+        <div
+          class="flex justify-center items-center flex-col text-center pt-20 text-6xl font-thin"
+        >
+          <span>TOI-19 <span class="text-orange-500">Unofficial</span></span>
+          <span>Freezed <span class="text-orange-500">Scoreboard</span></span>
         </div>
         <div class="overflow-x-auto py-20">
-          <Scoreboard client:load></Scoreboard>
+          <Scoreboard client:load />
         </div>
       </div>
       <div class="mb-5">
         <p class="text-xl">
-          Made with ❤️ by <a href="https://github.com/ttamx">ttamx</a>
+          Made with ❤️ by <a href="https://github.com/gean-dev">Gean Dev</a>
         </p>
       </div>
     </div>
