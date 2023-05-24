@@ -65,7 +65,7 @@
     } else if (rank <= Math.round(allUsersSize / 2)) {
       return "🥉 ";
     } else {
-      return "🎖️ ";
+      return "🍨 ";
     }
   }
 </script>
